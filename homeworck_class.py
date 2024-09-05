@@ -1,4 +1,4 @@
-class Car(object):
+class Car():
 
     def __init__(self,car_name,year):
         self.car_name = car_name
@@ -27,13 +27,13 @@ class Horse_Links(Car):
 
 
 
-    def Fuel_Consumption(self):
+    def fuel_consumption(self):
         print("Приближенная мощность в лошадиных силах", self.calculate_horsepower())
         print("Расход топлива в литрах на 100 км :",self.calculate_horsepower() * 0.1)
 
 
 
-a = Horse_Links("hyundai",2012,300,5000)
+a = Horse_Links("hyundai",2010,150,5000)
 a.car_color()
 a.calculate_horsepower()
-a.Fuel_Consumption()
+a.fuel_consumption()
